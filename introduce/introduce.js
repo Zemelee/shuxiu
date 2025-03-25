@@ -35,7 +35,7 @@ jQuery( window ).on( "load", function() {
         // animated transition & scroll onStep
         onStep();
         // stick navbar
-        navdefault.sticky();
+        // navdefault.sticky(); 
         // responsive part
         if ( jQuery( window ).width() < 1200 ) {
           

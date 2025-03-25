@@ -1,13 +1,17 @@
 // 蒙版点击事件
 document.addEventListener('DOMContentLoaded', function () {
+    const showHeadInner = localStorage.getItem('headInnerDiv');
     const headInnerDiv = document.querySelector('.headInner');
+    // 如果没有点击过蒙版，则显示蒙版
+    if (showHeadInner == '1') {
+        headInnerDiv.classList.add('hide');
+    }
     const link = document.querySelector('.maskbutton');
     link.addEventListener('click', function (event) {
-        console.log('222');
         headInnerDiv.classList.add('hide');
+        localStorage.setItem('headInnerDiv', '1');
     });
 });
-
 
 
 
@@ -15,12 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
 // 开场动画 监听页面初始化完成
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        document.querySelector('.intro-animation').style.opacity = '0';
-        createParticles();
-        initCircleAccordion();
-        setTimeout(() => {
-            document.querySelector('.intro-animation').style.display = 'none';
-        }, 1000);
+        const anima = document.querySelector('.intro-animation')
+        if (anima) {
+            anima.style.opacity = '0';
+            setTimeout(() => {
+                document.querySelector('.intro-animation').style.display = 'none';
+            }, 1000);
+        }
     }, 3000);
 });
 // 点击图片放大

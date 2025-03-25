@@ -23,5 +23,7 @@ window.onscroll = headerfixed;
 // 2秒后隐藏蒙版
 setTimeout(() => {
     const loader = document.getElementById('loader');
-    loader.classList.add('hide'); // 添加隐藏类
-  }, 2000);
+    if (loader) {
+        loader.classList.add('hide'); // 添加隐藏类
+    }
+}, 2000);

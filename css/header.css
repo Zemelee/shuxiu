@@ -135,7 +135,7 @@ header.fixed .s-header__nav li.active a {
 }
 
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 2100px) {
     .s-header:not(.s-header--opaque) .s-header__navigation {
         margin-left: calc(var(--logo-width) + 5.2rem);
     }
@@ -256,7 +256,7 @@ header.fixed .s-header__nav li.active a {
 }
 
 .hide {
-    display: none !important;
+    display: none !important;  
 }
 
 /* end preloader */
