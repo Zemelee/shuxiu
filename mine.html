@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+
+    <link href="mine/mine.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="css/tips.css">
+
+    <link rel="stylesheet" href="mine/icons.css">
+    <!-- <link rel="stylesheet" href="mine/s.css"> -->
+    <link rel="stylesheet" href="mine/flaticon.css">
+
+    <script src="js/globle.js"></script>
+
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="s-header">
+            <div class="s-header__logo">
+                <h1 class="m-0">SHUXIU</h1>
+            </div>
+            <div class="s-header__navigation">
+                <nav class="s-header__nav-wrap">
+                    <ul class="s-header__nav">
+                        <li><a href="index.html" title="">首页</a></li>
+                        <li><a href="introduce.html" title="">蜀绣介绍</a></li>
+                        <li><a href="history.html" title="">历史传承</a></li>
+                        <li><a href="works.html" title="">作品展示</a></li>
+                        <li class="active"><a href="mine.html" title="">个人中心</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <!-- 加载项 -->
+    <div class="backgroundloader" id="loader">
+        <div class="loader">
+            <div class="cirloader">
+                <div id="circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="slider p-relative">
+        <div class="main-banner arrow-layout-1 ">
+            <div class="slide-item"> <img src="images/mine/slider-1.jpg" class="image-fit" alt="Slider">
+                <div class="transform-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slider-content" data-aos="fade-right">
+                                    <h1 class="text-custom-white">Welcome To<span class="text-custom-blue">
+                                            蜀绣</span></h1>
+                                    <p class="text-custom-white">
+                                        蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                    </p>
+                                    <!-- <a href="#" class="btn-first btn-small">查看更多</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item"> <img src="images/mine/slider-2.jpg" class="image-fit" alt="Slider">
+                <div class="transform-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slider-content" data-aos="fade-right">
+                                    <h1 class="text-custom-white">Welcome To<span class="text-custom-blue">
+                                            蜀绣</span></h1>
+                                    <p class="text-custom-white">
+                                        蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                    </p>
+                                    <!-- <a href="#" class="btn-first btn-small">Find Out More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item"> <img src="images/mine/slider-3.jpg" class="image-fit" alt="Slider">
+                <div class="transform-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="slider-content" data-aos="fade-right">
+                                    <h1 class="text-custom-white">Welcome To<span class="text-custom-blue">
+                                            蜀绣</span></h1>
+                                    <p class="text-custom-white">
+                                        蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                    </p>
+                                    <!-- <a href="cars.html" class="btn-first btn-small">Find Out More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <!-- 内容 -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <!-- 我的收藏 左边 -->
+                <div class="heading">
+                    <div class="glitch-text">我的收藏
+                        <img style="width: 30px;height: 30px;" src="images/log.png" alt="">
+                    </div>
+                    <div class="glitch-text-e">My Collection</div>
+                </div>
+                <div class="col-lg-8" style="margin-top: 36px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/home/home-2.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="blog-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-calendar"></i>Feb 13, 2020</span>
+                                            </div>
+                                            <p>
+                                                蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                            </p>
+                                            <a href="#" class="btn btn-custom">查看更多<i
+                                                    class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/blog/blog-1.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="feature-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-account"></i><a href="#">next...</a></span>
+                                                <span><i class="mdi mdi-calendar"></i>2024.08.25</span>
+                                                <span><a href="#"><i class="mdi mdi-tag"></i>分类</a></span>
+                                            </div>
+                                            <p>我是一段简介内容，可以包含很多东西</p>
+                                            <a href="#" class="">查看详情<i class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/blog/blog-2.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="feature-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-account"></i><a href="#">next...</a></span>
+                                                <span><i class="mdi mdi-calendar"></i>2024.08.25</span>
+                                                <span><a href="#"><i class="mdi mdi-tag"></i>分类</a></span>
+                                            </div>
+                                            <p>我是一段简介内容，可以包含很多东西</p>
+                                            <a href="#" class="">查看详情<i class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mb-5">
+                                <div class="blog-index">
+                                    <div class="post-format-quote text-center">
+                                        <div class="link-post-content">
+                                            <i class="mdi mdi-format-quote-open"></i>
+                                            <h4 class="tag"><a href="">蜀绣</a></h4>
+                                            <h5><a href="standard-post.html">" 这里是一句名人格言"</a></h5>
+                                            <p>嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/blog/blog-3.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="feature-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-account"></i><a href="#">next...</a></span>
+                                                <span><i class="mdi mdi-calendar"></i>2024.08.25</span>
+                                                <span><a href="#"><i class="mdi mdi-tag"></i>分类</a></span>
+                                            </div>
+                                            <p>我是一段简介内容，可以包含很多东西</p>
+                                            <a href="#" class="">查看详情<i class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/blog/blog-4.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="feature-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-account"></i><a href="#">next...</a></span>
+                                                <span><i class="mdi mdi-calendar"></i>2024.08.25</span>
+                                                <span><a href="#"><i class="mdi mdi-tag"></i>分类</a></span>
+                                            </div>
+                                            <p>我是一段简介内容，可以包含很多东西</p>
+                                            <a href="#" class="">查看详情<i class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/blog/blog-5.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="feature-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-account"></i><a href="#">next...</a></span>
+                                                <span><i class="mdi mdi-calendar"></i>2024.08.25</span>
+                                                <span><a href="#"><i class="mdi mdi-tag"></i>分类</a></span>
+                                            </div>
+                                            <p>我是一段简介内容，可以包含很多东西</p>
+                                            <a href="#" class="">查看详情<i class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="main-div">
+                                <div class="blog-index">
+                                    <div class="blog-img">
+                                        <img src="images/blog/blog-6.jpg" class="mx-auto d-block img-fluid"
+                                            alt="feature-article-1">
+                                    </div>
+                                    <div class="blog-main-part">
+                                        <div class="feature-head text-center">
+                                            <h5><a href="#">蜀绣</a></h5>
+                                            <div class="post-meta">
+                                                <span><i class="mdi mdi-account"></i><a href="#">next...</a></span>
+                                                <span><i class="mdi mdi-calendar"></i>2024.08.25</span>
+                                                <span><a href="#"><i class="mdi mdi-tag"></i>分类</a></span>
+                                            </div>
+                                            <p>我是一段简介内容，可以包含很多东西</p>
+                                            <a href="#" class="">查看详情<i class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="pagination text-right">
+                                <ul>
+                                    <li><span class="nav-prev">上一页</span></li>
+                                    <li><span class="current">1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#" class="nav-prev">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 我的收藏 左边 -->
+                <!-- 右边内容 -->
+                <div class="col-lg-4" style="margin-top: 36px;">
+                    <div class="sidebar">
+                        <div class="text-center">
+                            <div id="search-2" class="widget wadget-search mb-0">
+                                <form role="search" method="get" id="searchform" class="searchform">
+                                    <div>
+                                        <input type="text" value="" name="s" id="s" placeholder="想搜索些什么呢...">
+                                        <input type="submit" id="searchsubmit" value="Search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="wadget text-center">
+                            <h4 class="text-uppercase min-title">个人中心</h4>
+                            <div class="cards-info">
+                                <img class="profile-pic" src="/images/avatarUrl.png" alt="">
+                                <div class="bottomss">
+                                    <div class="contentx">
+                                        <span class="names">庄馨怡</span>
+                                        <span class="about-me">想不到吧，点开后还是大美女！！！</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>说点什么吧，总得介绍我自己一下哇！不放将鼠标移动到头像上呢，试试看嘛！</p>
+                            <div>
+                                <a href="#"><i class="mdi mdi-instagram instagram social-icon"></i></a>
+                                <a href="#"><i class="mdi mdi-facebook facebook social-icon"></i></a>
+                                <a href="#"><i class="mdi mdi-twitter twitter social-icon"></i></a>
+                                <a href="#"><i class="mdi mdi-google google social-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar insta-img">
+                        <div class="wadget">
+                            <h4 class="text-uppercase text-center min-title">我的好友</h4>
+                            <div class="row mt-3">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="float-left">
+                                        <img src="images/instagram/insta-6.jpg" class="mx-auto d-block img-fluid"
+                                            style="border-radius: 16px;" alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <div class="latest-post">
+                                        <h5><a href="#">我叫好友1</a></h5>
+                                        <div class="post-meta">
+                                            <span><i class="mdi"></i>爱情是什么？爱情就像一把火，燃烧了我。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="float-left">
+                                        <img src="images/instagram/insta-2.jpg" class="mx-auto d-block img-fluid"
+                                            style="border-radius: 16px;" alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <div class="latest-post">
+                                        <h5><a href="#">我叫好友2</a></h5>
+                                        <div class="post-meta">
+                                            <span><i class="mdi"></i>燕子，我们还会再见面吗？燕子，下次见面，你一定得幸福啊！</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="float-left">
+                                        <img src="images/instagram/insta-4.jpg" class="mx-auto d-block img-fluid"
+                                            style="border-radius: 16px;" alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <div class="latest-post">
+                                        <h5><a href="#">我叫好友3</a></h5>
+                                        <div class="post-meta">
+                                            <span><i class="mdi"></i>笑死我了，我在玩些什么梗啊！土死了土死了，换个新鲜一点的吧，比如说，我爱你！...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar insta-img">
+                        <div class="wadget">
+                            <h4 class="text-uppercase text-center min-title">网站通知</h4>
+                            <div class="row no-gutters">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="text-center">
+                                        <h5>10</h5>
+                                        <h6>活动</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="text-center">
+                                        <h5>26</h5>
+                                        <h6>新闻</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="text-center">
+                                        <h5>1</h5>
+                                        <h6>更新</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="insta-fam">
+                                        <img src="images/instagram/insta-1.jpg" class="mx-auto d-block img-fluid"
+                                            alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="insta-fam">
+                                        <img src="images/instagram/insta-2.jpg" class="mx-auto d-block img-fluid"
+                                            alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="insta-fam">
+                                        <img src="images/instagram/insta-3.jpg" class="mx-auto d-block img-fluid"
+                                            alt="img-missing">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="insta-fam">
+                                        <img src="images/instagram/insta-4.jpg" class="mx-auto d-block img-fluid"
+                                            alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="insta-fam">
+                                        <img src="images/instagram/insta-5.jpg" class="mx-auto d-block img-fluid"
+                                            alt="img-missing">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="insta-fam">
+                                        <img src="images/instagram/insta-6.jpg" class="mx-auto d-block img-fluid"
+                                            alt="img-missing">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="wadget">
+                            <h4 class="text-uppercase text-center min-title">网站亮点</h4>
+                            <div class="text-center tagcloud">
+                                <a href="#">时尚</a>
+                                <a href="#">古典</a>
+                                <a href="#">生活</a>
+                                <a href="#">雅致</a>
+                                <a href="#">乐趣</a>
+                                <a href="#">优雅</a>
+                                <a href="#">文学</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="Btn" onclick="window.location.href='program.html'">
+        <div class="sign"><svg viewBox="0 0 512 512">
+                <path
+                    d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                </path>
+            </svg></div>
+        <div class="text">活动</div>
+    </button>
+    <!-- 内容 -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 mb-50 mt-4">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <h1 class="m-0">SHUXIU</h1>
+                            </div>
+                            <div class="footer-text">
+                                <p>我是一个大美女！！！请不要当真！！！</p>
+                            </div>
+                            <div class="contact-footer">
+                                <ul class="title-text">
+                                    <li><i class="fas fa-phone-alt"></i><a href="#">123-456-7890</a></li>
+                                    <li><i class="fas fa-envelope"></i><a href="#">XYZ@qq.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 mb-30 mt-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>快速链接</h3>
+                            </div>
+                            <ul>
+                                <li><i class="fas fa-arrow-right"></i><a href="index.html">首页</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="introduce.html">蜀绣介绍</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="history.html">历史传承</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="works.html">作品传承</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="mine.html">个人中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50 mt-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>联系我们</h3>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="#" class="form-control form-control-custom mb-3"
+                                        placeholder="邮箱" required>
+                                    <input type="password" name="#" class="form-control form-control-custom"
+                                        placeholder="密码" required>
+                                    <input type="text" name="#" class="form-control form-control-custom mt-4"
+                                        placeholder="备注" required>
+                                    <a href="#" class="btn-first btn-small category">提交</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>蜀中之宝 始于针尖</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="mine/jquery.min.js"></script>
+    <script src="mine/mine.js"></script>
+    <script src="mine/custom.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+            disable: function () {
+                var screenmaxWidth = 1040;
+                return window.innerWidth < screenmaxWidth;
+            }
+        });
+    </script>
+</body>
+
+</html>

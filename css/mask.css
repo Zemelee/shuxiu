@@ -1,0 +1,249 @@
+/* 
+    首页遮罩层样式
+*/
+
+.headInner {
+    -moz-transition: background 1s ease-in-out, height 0.2s ease-in-out;
+    -webkit-transition: background 1s ease-in-out, height 0.2s ease-in-out;
+    -ms-transition: background 1s ease-in-out, height 0.2s ease-in-out;
+    transition: background 1s ease-in-out, height 0.2s ease-in-out;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    background: rgba(254, 254, 254, 0.85);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10001;
+}
+
+.headInner .inner {
+    -moz-transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    -webkit-transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    -ms-transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    background: #e74c3c;
+    border-radius: 100%;
+    width: 35em;
+    height: 35em;
+    padding: 4em;
+    text-align: center;
+    box-shadow: 0 0 0 1em #FFF;
+    cursor: default;
+}
+
+.headInner .inner .content {
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.headInner .inner .content h1 {
+    font-size: 4em;
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 0 .25em 0;
+    color: #fff;
+}
+
+.headInner .inner .content h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 0 1em 0;
+}
+
+.headInner .inner .maskbutton {
+    -moz-transition: background 1s ease-in-out;
+    -webkit-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
+    margin: 0;
+    border-radius: 30px;
+}
+
+.headInner .inner .maskbutton.hidden {
+    display: none;
+    cursor: pointer;
+}
+
+.headInner .inner.hidden {
+    display: none;
+}
+
+.headInner.hide,
+.headInner.preview {
+    -moz-transition: background 0.2s ease-in-out, height 1s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out, height 1s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out, height 1s ease-in-out;
+    transition: background 0.2s ease-in-out, height 1s ease-in-out;
+    background: none;
+    height: 0;
+    animation: fadeOut 1.2s ease-in-out forwards;
+}
+
+@keyframes  fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.headInner.hide .inner,
+.headInner.preview .inner {
+    height: 6em;
+    width: 6em;
+    padding: 2em;
+}
+
+.headInner.hide .inner .content,
+.headInner.preview .inner .content {
+    opacity: 0;
+}
+
+.headInner.hide .inner .content h1,
+.headInner.preview .inner .content h1 {
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-weight: 300;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+    font-family: "Work Sans", sans-serif;
+    display: none;
+}
+
+.headInner.hide .inner .content h2,
+.headInner.preview .inner .content h2 {
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Courier New", monospace;
+    font-weight: 100;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+    display: none;
+}
+
+.headInner.hide .maskbutton.big,
+.headInner.preview .maskbutton.big {
+    display: none;
+}
+
+.headInner.hide .maskbutton.hidden,
+.headInner.preview .maskbutton.hidden {
+    text-decoration: none;
+    padding-top: 1.5em;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    display: inline-block;
+}
+
+.headInner.hide .maskbutton.hidden:before,
+.headInner.preview .maskbutton.hidden:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.headInner.hide .maskbutton.hidden:before,
+.headInner.preview .maskbutton.hidden:before {
+    content: '\f015';
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.headInner.hide .maskbutton.hidden span,
+.headInner.preview .maskbutton.hidden span {
+    display: none;
+}
+
+@media screen and (max-width: 736px) {
+
+    .headInner .inner {
+        width: 25em;
+        height: 25em;
+        font-size: .75em;
+        padding: 3em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .headInner .inner {
+        width: 26em;
+        height: 26em;
+        padding: 2em;
+        font-size: .65em;
+    }
+
+    .headInner .inner .maskbutton {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+}
+
+.maskbutton {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border-radius: 4px;
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 300;
+	height: 2.85em;
+	line-height: 2.95em;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+    background: #FFF;
+	color: #e74c3c;
+}
+
+/* .maskbutton.alt {
+	background: #FFF;
+	color: #e74c3c;
+} */

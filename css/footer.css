@@ -1,0 +1,196 @@
+/* 
+    footer样式
+*/
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer .footer-widget .contact-footer .title-text li i {
+    color: #fff;
+}
+
+.footer .footer-widget .contact-footer .title-text li a {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #892E29;
+    /* position: relative; */
+}
+
+.footer .footer-content {
+    /* position: relative; */
+    z-index: 2;
+}
+
+.footer .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.footer .footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer .footer-logo h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+.footer .footer-text p {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+    max-width: 85%;
+}
+
+.footer .footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.footer .facebook-bg {
+    background: #7abf18;
+    transition: .5s
+}
+
+.footer .facebook-bg:hover {
+    background: #4e8205;
+    transition: .5s
+}
+
+.footer .footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #7abf18;
+}
+
+.footer .footer-widget ul li {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.footer .footer-widget ul li a:hover {
+    color: #7abf18;
+}
+
+.footer .footer-widget ul li i {
+    color: #fff;
+}
+
+.footer .footer-widget ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.footer .copyright-area {
+    background: #F9EDCD;
+    padding: 15px 0;
+}
+
+.footer .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.footer .copyright-text p a {
+    color: #7abf18;
+}
+
+.footer .footer-menu li:hover a {
+    color: #7abf18;
+}
+
+.footer .form-group .form-control {
+    background: #fff;
+}
+
+.footer .form-group .btn-small {
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 2px;
+    padding: 10px 60px;
+    color: black;
+}
+
+
+.btn-first {
+	display: inline-block;
+	padding: 12px 40px;
+	position: relative;
+	transition: 0.5s all;
+	background: transparent;
+	color: inherit;
+	border: 1px solid transparent;
+	font-size: 14px;
+	overflow: hidden;
+	z-index: 1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn-small:before, .btn-submit:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background-color: #4e8205;
+    color: white;
+	width: 0%;
+	transition: 0.5s all;
+	z-index: -1;
+}
+.btn-small:hover, .btn-submit:hover {
+	color: #fff;
+}
+
+.btn-small:hover:before, .btn-submit:hover:before {
+	width: 100%;
+}
+
+.btn-small {
+	background: #111111;
+	border-color: #111111;
+	color: #fff;
+}
+
+.btn-small:hover, .btn-small:focus {
+	border-color: #7abf18;
+    color: white;
+}

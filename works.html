@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>作品展示</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="work/work.css">
+    <link rel="stylesheet" href="work/others.css">
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/globle.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏区域 -->
+    <header>
+        <div class="s-header">
+            <!-- logo -->
+            <div class="s-header__logo">
+                <h1 class="m-0">SHUXIU</h1>
+            </div>
+            <!-- 导航 -->
+            <div class="s-header__navigation">
+                <nav class="s-header__nav-wrap">
+                    <ul class="s-header__nav">
+                        <li><a href="index.html" title="">首页</a></li>
+                        <li><a href="introduce.html" title="">蜀绣介绍</a></li>
+                        <li><a href="history.html" title="">历史传承</a></li>
+                        <li class="active"><a href="works.html" title="">作品展示</a></li>
+                        <li><a href="mine.html" title="">个人中心</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- 轮播图 -->
+    <!-- 加载项 -->
+    <div class="backgroundloader" id="loader">
+        <div class="loader">
+            <div class="cirloader">
+                <div id="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative p-0">
+        <div class="carousel-header">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="images/bg1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;" data-aos="fade-left">
+                                <h1 class="display-2 text-capitalize text-white mb-4" style="font-family: '楷体';">
+                                    指尖绽芳华，丝线绘乾坤!
+                                </h1>
+                                <p class="mb-5 fs-5" style="font-family: '楷体';">
+                                    蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/bg1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;" data-aos="fade-left">
+                                <h1 class="display-2 text-capitalize text-white mb-4" style="font-family: '楷体';">
+                                    指尖绽芳华，丝线绘乾坤!
+                                </h1>
+                                <p class="mb-5 fs-5" style="font-family: '楷体';">
+                                    蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/bg1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;" data-aos="fade-left">
+                                <h1 class="display-2 text-capitalize text-white mb-4" style="font-family: '楷体';">
+                                    指尖绽芳华，丝线绘乾坤!
+                                </h1>
+                                <p class="mb-5 fs-5" style="font-family: '楷体';">
+                                    蜀绣题材广泛，犹如一部百科全书，涵盖了世间万物。一幅以熊猫为主题的蜀绣作品，能将熊猫憨态可掬的神态、黑白相间毛发的质感细腻地展现出来，让人不禁为绣娘的精湛技艺赞叹。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 制作工具和材料 -->
+    <div class="heading">
+        <h1 class="glitch-text">制造工具和材料
+            <img style="width: 30px;height: 30px;" src="images/log.png" alt="">
+        </h1>
+        <div class="glitch-text-e">Making Tools And Materials</div>
+    </div>
+    <canvas></canvas>
+    <div id="tooltip" class="tooltip"></div>
+    <div class="container-fluid  service py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">蜀绣：指尖绽芳华，丝线绘乾坤</h5>
+                <p class="mb-0">
+                    蜀绣的精妙，首推其针法。蜀绣针法体系极为丰富，达 100 余种，每种针法都蕴含着独特的奥秘与技巧。例如
+                    “滚针”，线条流畅，宛如行云流水，常用于表现物体的轮廓与线条，使绣品线条刚劲有力又不失灵动；“截针”
+                    则针脚整齐，如同刀切般规整，在绣制规整图案或表现硬朗质感时发挥着关键作用。绣娘凭借一双巧手，灵活运用各种针法，让丝线在绸缎上交织出美妙的图案。
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-12" data-aos="fade-right">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                                <div class="service-content text-end">
+                                    <h5 class="mb-4">秀针</h5>
+                                    <p class="mb-0">
+                                        绣针是蜀绣中最基础也是最重要的工具之一。蜀绣常用的绣针有细针、中针和粗针之分，分别适用于绣制细腻的花卉、线条清晰的图案以及需要较强穿透力的厚料。
+                                    </p>
+                                </div>
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/7b37d8a0d6584a7324d78f832e33da27~480x480.JPEG"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-right">
+                            <div
+                                class="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
+                                <div class="service-content text-end">
+                                    <h5 class="mb-4">绣绷</h5>
+                                    <p class="mb-0">
+                                        绣绷用于固定绣布，能帮助绣娘保持绣布平整，便于绣制。绣绷分为圆形和方形两种，可根据绣制图案的大小和形状选择。
+                                    </p>
+                                </div>
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/5f83e7814fc052e23244af4ad954137f~480x480.JPEG"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-right">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                                <div class="service-content text-end">
+                                    <h5 class="mb-4">剪刀</h5>
+                                    <p class="mb-0">
+                                        剪刀用于修剪绣线头、调整绣制形状等，选择时需注重其锋利度和手感舒适度。
+                                    </p>
+                                </div>
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/89cd05c6b1c7aa601fa39ecb26720c22~480x480.JPEG"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-right">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                                <div class="service-content text-end">
+                                    <h5 class="mb-4">镊子</h5>
+                                    <p class="mb-0">
+                                        镊子用于夹取绣线、辅助绣制细小部位等，同样要注意锋利度和手感。
+                                    </p>
+                                </div>
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/0f8f14a191a1419974318f4ec10f44ec~480x480.JPEG"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-12" data-aos="fade-left">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/90c8b7fb242265304a3999e1e3debe91~tplv-qppzugg2ve-270.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-4">辅助工具</h5>
+                                    <p class="mb-0">
+                                        辅助工具包括铅笔、橡皮、尺子、针线盒等。铅笔和橡皮用于在绣布上绘制草图或修改错误；尺子用于测量绣制尺寸、保持图案比例等；针线盒用于存放和整理绣针和绣线，确保绣制过程有序。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-left">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/0f8f14a191a1419974318f4ec10f44ec~480x480.JPEG"
+                                        alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-4">灯光设备</h5>
+                                    <p class="mb-0">
+                                        良好的照明条件对于蜀绣来说至关重要，建议在绣制区域配置一盏柔和而明亮的台灯或吊灯，以确保光线均匀且不会造成眼睛疲劳。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-left">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/0f8f14a191a1419974318f4ec10f44ec~480x480.JPEG"
+                                        alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-4">绣线</h5>
+                                    <p class="mb-0">
+                                        绣线是蜀绣作品的灵魂所在，其色彩丰富、质地多样。蜀绣常用的绣线有丝线、棉线等，其中丝线光泽度高、色彩鲜艳，适合绣制高档作品；棉线则柔软易操作，适合初学者练习。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-left">
+                            <div
+                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                <div class="service-icon p-4">
+                                    <img class="fa" style="width: 100px;height: 100px;"
+                                        src="https://p3-search.byteimg.com/img/labis/0f8f14a191a1419974318f4ec10f44ec~480x480.JPEG"
+                                        alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-4">绣布</h5>
+                                    <p class="mb-0">
+                                        绣布是蜀绣作品的基底，其材质和纹理对绣制效果有着重要影响。蜀绣常用的绣布有丝绸、棉布等，其中丝绸质地光滑、光泽度高，适合绣制高档作品；棉布则吸湿性好、易于操作，适合初学者练习。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="detail.html">查看更多内容</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 作品一览 -->
+    <div class="heading">
+        <h1 class="glitch-text">作品一览
+            <img style="width: 30px;height: 30px;" src="images/log.png" alt="">
+        </h1>
+        <div class="glitch-text-e">List Of Works</div>
+    </div>
+    <div class="container-fluid destination py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">蜀绣：针尖上的锦绣华章</h5>
+                <p class="mb-0">
+                    蜀绣，作为中国四大名绣之一，宛如一颗璀璨明珠，闪耀在华夏传统工艺的浩瀚星空中。它以针法严谨、针脚平齐、变化丰富、形象生动、富有立体感的独特风格，在刺绣艺术领域独树一帜。
+                    蜀绣起源于川西民间，早在汉代，蜀绣便已誉满天下，与蜀锦并称为
+                    “蜀中瑰宝”。古往今来，无数民间绣娘以针为笔，以线为墨，在丝绸锦缎上勾勒出山川河流、花鸟鱼虫、人物百态等世间万象，赋予了蜀绣深厚的文化底蕴与艺术价值。
+                </p>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <div class="col-lg-6" data-aos="fade-up">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="images/works/destination-1.jpg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                                <a href="#" class="btn-hover text-white">
+                                                    立即查看
+                                                    <i class="fa fa-arrow-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="images/works/destination-1.jpg" data-lightbox="destination-1">
+                                                    <i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                        style="display: flex;align-items: center;justify-content: center;"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6" data-aos="fade-left">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="images/works/destination-2.jpg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                                <a href="#" class="btn-hover text-white">立即查看 <i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="images/works/destination-2.jpg"
+                                                    data-lightbox="destination-2"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                        style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6" data-aos="fade-right">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="images/works/destination-7.jpg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                                <a href="#" class="btn-hover text-white">立即查看<i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="images/works/destination-7.jpg"
+                                                    data-lightbox="destination-7"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                        style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6" data-aos="fade-up">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="images/works/destination-8.jpg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                                <a href="#" class="btn-hover text-white">立即查看<i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                            <div class="search-icon">
+                                                <a href="images/works/destination-8.jpg"
+                                                    data-lightbox="destination-8"><i
+                                                        class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                        style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4" data-aos="fade-left">
+                                <div class="destination-img h-100">
+                                    <img class="img-fluid rounded w-100 h-100" src="images/works/destination-9.jpg"
+                                        style="object-fit: cover; min-height: 300px;" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                        <a href="#" class="btn-hover text-white">立即查看<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="images/works/destination-9.jpg" data-lightbox="destination-4"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" data-aos="fade-right">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="images/works/destination-4.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                        <a href="#" class="btn-hover text-white">理解查看<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="images/works/destination-4.jpg" data-lightbox="destination-4"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" data-aos="fade-left">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="images/works/destination-5.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                        <a href="#" class="btn-hover text-white">立即查看<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="images/works/destination-5.jpg" data-lightbox="destination-5"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" data-aos="fade-left">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="images/works/destination-6.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">9
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">蜀绣</h4>
+                                        <a href="#" class="btn-hover text-white">立即查看<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="search-icon">
+                                        <a href="images/works/destination-6.jpg" data-lightbox="destination-6"><i
+                                                class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"
+                                                style="display: flex;align-items: center;justify-content: center;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="container-fluid ExploreTour py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">蜀绣：千年传承的东方织梦艺术</h5>
+                <p class="mb-0">
+                    在悠悠华夏的传统工艺宝库中，蜀绣宛如一首细腻的诗篇，以丝线为墨，在锦缎上书写着千年的风华。它与苏绣、湘绣、粤绣齐名，并称中国四大名绣，是巴蜀大地孕育出的璀璨明珠，凝聚着古蜀人民的智慧与巧思。
+                    蜀绣的历史源远流长，可追溯至古蜀时期。当时，蜀地丝织业发达，为蜀绣的诞生提供了得天独厚的条件。历经岁月的洗礼，蜀绣在秦汉时期崭露头角，至唐宋时已达鼎盛，凭借其精湛技艺闻名遐迩，成为宫廷与民间竞相追捧的艺术珍品。
+                </p>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div id="NationalTab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="national-item">
+                                    <img src="images/works/explore-tour-1.jpg" class="img-fluid w-100 rounded"
+                                        alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                            <a href="#" class="btn-hover text-white">查看所有 <i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="national-item">
+                                    <img src="images/works/explore-tour-2.jpg" class="img-fluid w-100 rounded"
+                                        alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                            <a href="#" class="btn-hover text-white">查看所有<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="national-item">
+                                    <img src="images/works/explore-tour-3.jpg" class="img-fluid w-100 rounded"
+                                        alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                            <a href="#" class="btn-hover text-white">查看所有<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="national-item">
+                                    <img src="images/works/explore-tour-4.jpg" class="img-fluid w-100 rounded"
+                                        alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                            <a href="#" class="btn-hover text-white">查看所有<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="national-item">
+                                    <img src="images/works/explore-tour-5.jpg" class="img-fluid w-100 rounded"
+                                        alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                            <a href="#" class="btn-hover text-white">查看所有<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="national-item">
+                                    <img src="images/works/explore-tour-6.jpg" class="img-fluid w-100 rounded"
+                                        alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                            <a href="#" class="btn-hover text-white">查看所有<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="container-fluid gallery py-5 my-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">蜀绣：指尖绽芳华，丝线绘乾坤</h5>
+            <p class="mb-0">
+                蜀绣的精妙，首推其针法。蜀绣针法体系极为丰富，达 100 余种，每种针法都蕴含着独特的奥秘与技巧。例如 “滚针”，线条流畅，宛如行云流水，常用于表现物体的轮廓与线条，使绣品线条刚劲有力又不失灵动；“截针”
+                则针脚整齐，如同刀切般规整，在绣制规整图案或表现硬朗质感时发挥着关键作用。绣娘凭借一双巧手，灵活运用各种针法，让丝线在绸缎上交织出美妙的图案。
+            </p>
+        </div>
+        <div class="tab-class text-center">
+            <div class="tab-content">
+                <div id="GalleryTab-1" class="tab-pane fade show p-0 active" style="width: 84%;margin-left: 8%;">
+                    <div class="row g-2">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2" data-aos="fade-right">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" data-aos="fade-right">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2" data-aos="fade-up">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" data-aos="fade-up">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2" data-aos="fade-up">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2" data-aos="fade-up">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-6.jpg" data-lightbox="gallery-6" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="fade-left">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-7.jpg" data-lightbox="gallery-7" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2" data-aos="fade-left">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-8.jpg" data-lightbox="gallery-8" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="fade-left">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-9.jpg" data-lightbox="gallery-9" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2" data-aos="fade-left">
+                            <div class="gallery-item h-100">
+                                <img src="images/works/gallery-10.jpg" class="img-fluid w-100 h-100 rounded"
+                                    alt="Image">
+                                <div class="gallery-content">
+                                    <div class="gallery-info">
+                                        <h5 class="text-white text-uppercase mb-2">蜀绣</h5>
+                                        <a href="#" class="btn-hover text-white">查看所有<i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="gallery-plus-icon">
+                                    <a href="images/works/gallery-10.jpg" data-lightbox="gallery-10" class="my-auto"><i
+                                            class="fas fa-plus fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="Btn" onclick="window.location.href='program.html'">
+        <div class="sign"><svg viewBox="0 0 512 512">
+                <path
+                    d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                </path>
+            </svg></div>
+        <div class="text">活动</div>
+    </button>
+    <!-- 底部导航区域 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 mb-50 mt-4">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <h1 class="m-0">SHUXIU</h1>
+                            </div>
+                            <div class="footer-text">
+                                <p>我是一个大美女！！！请不要当真！！！</p>
+                            </div>
+                            <div class="contact-footer">
+                                <ul class="title-text">
+                                    <li><i class="fas fa-phone-alt"></i><a href="#">123-456-7890</a></li>
+                                    <li><i class="fas fa-envelope"></i><a href="#">XYZ@qq.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 mb-30 mt-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>快速链接</h3>
+                            </div>
+                            <ul>
+                                <li><i class="fas fa-arrow-right"></i><a href="index.html">首页</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="introduce.html">蜀绣介绍</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="history.html">历史传承</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="works.html">作品传承</a></li>
+                                <li><i class="fas fa-arrow-right"></i><a href="mine.html">个人中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50 mt-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>联系我们</h3>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="#" class="form-control form-control-custom mb-3"
+                                        placeholder="邮箱" required>
+                                    <input type="password" name="#" class="form-control form-control-custom"
+                                        placeholder="密码" required>
+                                    <input type="text" name="#" class="form-control form-control-custom mt-4"
+                                        placeholder="备注" required>
+                                    <a href="#" class="btn-first btn-small category">提交</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>蜀中之宝 始于针尖</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="work/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="work/work.js"></script>
+    <script src="work/slider.js"></script>
+    <script src="work/slider-body.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            disable: function () {
+                var screenmaxWidth = 1040;
+                return window.innerWidth < screenmaxWidth;
+            }
+        });
+        // const cvs = document.querySelector('canvas')
+        // const ctx = cvs.getContext('2d',{
+        //     willReadFrequently:true
+        // })
+        // let originalData // 保存原始图像数据
+        // let currentModified = [] // 记录当前修改的像素索引
+        // function init(){
+        //     const img = new Image()
+        //     img.onload = ()=>{
+        //         cvs.width = 800
+        //         cvs.height = 800
+        //         ctx.drawImage(img,0,0,cvs.width,cvs.height)
+        //         // 保存初始图像数据
+        //         originalData = ctx.getImageData(0, 0, cvs.width, cvs.height)
+        //     }
+        //     img.src = 'images/canvas.jpg'
+        // }
+
+        // cvs.addEventListener('mousemove',(e)=>{
+        //     // 恢复之前的修改
+        //     restoreOriginal()
+        //     const x = e.offsetX,y = e.offsetY
+        //     console.log(x,y)
+        //     const imgData = ctx.getImageData(0,0,cvs.width,cvs.height)
+        //     const clickColor = getColor(x,y,imgData)
+        //     const greenColor = [0,255,0,255]
+        //     function _changeColor(x,y){
+        //         if(x<0||x>=cvs.width||y<0||y>=cvs.height){
+        //             return
+        //         }
+        //         const color = getColor(x,y,imgData)
+        //         if(diff(color,clickColor)>100){
+        //             return
+        //         }
+        //         if(diff(color,greenColor)===0){
+        //             return
+        //         }
+        //         const i = point2Index(x,y)
+        //         imgData.data.set(greenColor,i)
+        //         _changeColor(x+1,y)
+        //         _changeColor(x-1,y)
+        //         _changeColor(x,y+1)
+        //         _changeColor(x,y-1)
+        //     }
+        //     _changeColor(x,y)
+        //     ctx.putImageData(imgData,0,0)
+        // })
+
+        // function point2Index(x,y){
+        //     return (y*cvs.width+x)*4
+        // }
+
+        // function getColor(x,y,imgData){
+        //     const i = point2Index(x,y)
+        //     return [
+        //         imgData.data[i],
+        //         imgData.data[i+1],
+        //         imgData.data[i+2],
+        //         imgData.data[i+3],
+        //     ]
+        // }
+
+        // function diff(color1,color2){
+        //     return Math.abs(color1[0]-color2[0])+Math.abs(color1[1]-color2[1])+Math.abs(color1[2]-color2[2])+Math.abs(color1[3]-color2[3])
+        // }
+
+        // init()
+
+        const cvs = document.querySelector('canvas')
+        const ctx = cvs.getContext('2d', { willReadFrequently: true })
+        let originalData // 保存原始图像数据
+        let currentModified = [] // 记录当前修改的像素索引
+
+        function init() {
+            const img = new Image()
+            img.onload = () => {
+                cvs.width = 800
+                cvs.height = 800
+                ctx.drawImage(img, 0, 0, cvs.width, cvs.height)
+                // 保存初始图像数据
+                originalData = ctx.getImageData(0, 0, cvs.width, cvs.height)
+            }
+            img.src = 'images/canvas.jpg'
+        }
+
+        cvs.addEventListener('mousemove', (e) => {
+            // 恢复之前的修改
+            restoreOriginal()
+
+            const x = e.offsetX, y = e.offsetY
+            if (x < 0 || x >= cvs.width || y < 0 || y >= cvs.height) return
+
+            // 获取当前图像数据
+            const tempData = ctx.getImageData(0, 0, cvs.width, cvs.height)
+            const clickColor = getColor(x, y, tempData)
+
+            // 执行颜色修改
+            currentModified = floodFill(x, y, clickColor, [254, 173, 21, 255], tempData)
+            ctx.putImageData(tempData, 0, 0)
+        })
+
+        cvs.addEventListener('mouseleave', restoreOriginal)
+
+        // 泛洪填充算法（使用队列代替递归）
+        function floodFill(startX, startY, targetColor, replaceColor, imageData) {
+            const queue = []
+            const modified = []
+            const visited = new Set()
+            const tolerance = 100 // 颜色差异容忍度
+
+            queue.push([startX, startY])
+            visited.add(`${startX},${startY}`)
+
+            while (queue.length > 0) {
+                const [x, y] = queue.shift()
+                const i = point2Index(x, y)
+
+                // 获取当前颜色
+                const currentColor = [
+                    imageData.data[i],
+                    imageData.data[i + 1],
+                    imageData.data[i + 2],
+                    imageData.data[i + 3],
+                ]
+
+                // 颜色匹配判断
+                if (diff(currentColor, targetColor) > tolerance) continue
+                if (diff(currentColor, replaceColor) === 0) continue
+
+                // 修改颜色并记录
+                imageData.data.set(replaceColor, i)
+                modified.push(i)
+
+                // 检查相邻像素
+                const directions = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+                for (const [dx, dy] of directions) {
+                    const nx = x + dx
+                    const ny = y + dy
+                    const key = `${nx},${ny}`
+
+                    if (nx >= 0 && nx < cvs.width &&
+                        ny >= 0 && ny < cvs.height &&
+                        !visited.has(key)) {
+                        visited.add(key)
+                        queue.push([nx, ny])
+                    }
+                }
+            }
+            return modified
+        }
+
+        // 恢复原始图像
+        function restoreOriginal() {
+            if (!originalData || currentModified.length === 0) return
+
+            // 创建临时数据副本
+            const tempData = ctx.getImageData(0, 0, cvs.width, cvs.height)
+
+            // 仅恢复被修改的像素
+            currentModified.forEach(i => {
+                tempData.data.set([
+                    originalData.data[i],
+                    originalData.data[i + 1],
+                    originalData.data[i + 2],
+                    originalData.data[i + 3]
+                ], i)
+            })
+
+            ctx.putImageData(tempData, 0, 0)
+            currentModified = []
+        }
+
+        // 其他工具函数保持不变
+        function point2Index(x, y) { return (y * cvs.width + x) * 4 }
+        function getColor(x, y, imgData) {
+            const i = point2Index(x, y)
+            return [imgData.data[i], imgData.data[i + 1], imgData.data[i + 2], imgData.data[i + 3]]
+        }
+        function diff(c1, c2) {
+            return Math.abs(c1[0] - c2[0]) + Math.abs(c1[1] - c2[1]) +
+                Math.abs(c1[2] - c2[2]) + Math.abs(c1[3] - c2[3])
+        }
+
+        init()
+    </script>
+</body>
+
+</html>
